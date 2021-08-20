@@ -1,0 +1,33 @@
+.cite-nav__toggle {
+  display: none;
+}
+
+.cite-nav__list {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.cite-nav__item {
+  margin-left: 40px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.cite-nav__link {
+  color: $basic_black;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  &:hover,
+  &:focus {
+    color: $basic_orange-red;
+  }
+}

@@ -1,7 +1,7 @@
 @import "general/fonts.scss";
+@import "general/variables.scss";
+@import "general/common.scss";
 
-body {
-  font-family: "Montserrat", "Trebuchet MS", sans-serif;
-  color: white;
-  background-color: black;
-}
+@import "blocks/header.scss";
+@import "blocks/cite-nav.scss";
+@import "blocks/socials.scss";

@@ -1,0 +1,25 @@
+.header {
+  min-height: 100px;
+  padding: 36px 30px 32px;
+}
+
+.header__wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.header__logo {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.header__cite-nav {
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.header__socials {
+  margin-right: 0;
+  min-width: max-content;
+}
