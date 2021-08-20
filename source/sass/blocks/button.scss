@@ -1,0 +1,28 @@
+.button {
+  color: $basic_white;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: $basic_orange-red;
+  display: flex;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    background-color: $basic_orange;
+  }
+
+  &--arrow {
+    justify-content: space-between;
+    padding: 0 40px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 16px;
+      height: 16px;
+      background-image: url("../img/icon-arrow.svg");
+    }
+  }
+}
