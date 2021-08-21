@@ -2,11 +2,13 @@
   color: $basic_white;
   font-weight: 700;
   font-size: 12px;
+  line-height: 15px;
   letter-spacing: 2px;
   text-transform: uppercase;
   background-color: $basic_orange-red;
   display: flex;
   align-items: center;
+  justify-content: center;
 
   &:hover,
   &:focus {
@@ -24,5 +26,14 @@
       height: 16px;
       background-image: url("../img/icon-arrow.svg");
     }
+  }
+
+  &--transparent {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2px;
+    background-color: transparent;
+    border: 1px solid $special_white;
   }
 }
