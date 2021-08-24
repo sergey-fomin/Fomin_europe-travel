@@ -49,10 +49,10 @@
           </button>
           <ul class="cite-nav__list">
             <li class="cite-nav__item">
-              <a href="" class="cite-nav__link">О путешествии</a>
+              <a href="#catalog-title" class="cite-nav__link">О путешествии</a>
             </li>
             <li class="cite-nav__item">
-              <a href="" class="cite-nav__link">Цены</a>
+              <a href="#prices-title" class="cite-nav__link">Цены</a>
             </li>
           </ul>
         </nav>
@@ -93,7 +93,7 @@
 
       <section class="catalog">
         <div class="container">
-          <h2 class="catalog__title">Места посещения</h2>
+          <h2 class="catalog__title" id="catalog-title">Места посещения</h2>
           <p class="catalog__lead">
             Вы можете выбрать полный тур или частичный, с посещением первых 3
             мест
@@ -183,97 +183,179 @@
       </section>
 
       <section class="about">
+        <!-- <div class="container"> -->
         <h2 class="visually-hidden">Подробная информация и отзывы</h2>
-        <div class="tabs">
-          <div class="tabs-triggers">
-            <a href="" class="tabs-triggers__link">Греция</a>
-            <a href="" class="tabs-triggers__link">Албания</a>
-            <a href="" class="tabs-triggers__link">Македония</a>
-            <a href="" class="tabs-triggers__link">Черногория</a>
-            <a href="" class="tabs-triggers__link">Хорватия</a>
+        <!-- <div class="tabs"> -->
+        <!-- class="about__map-image"
+          width="1444"
+          height="1089" -->
+        <img
+          src="img/about-map.png"
+          alt=""
+          class="about__map-image"
+          width="1444"
+          height="1089"
+        />
+        <div class="about__tab-triggers tabs__triggers tabs-triggers">
+          <a
+            href="#tab-greece"
+            class="tabs-triggers__link tabs-triggers__link--active"
+            >Греция</a
+          >
+          <a href="#tab-albania" class="tabs-triggers__link">Албания</a>
+          <a href="#tab-macedonia" class="tabs-triggers__link">Македония</a>
+          <a href="#tab-montenegro" class="tabs-triggers__link">Черногория</a>
+          <a href="#tab-croatia" class="tabs-triggers__link">Хорватия</a>
+        </div>
+        <div class="about__tab-content tabs__content tabs-content">
+          <div
+            class="tabs-content__item tabs-content__item--active"
+            id="tab-greece"
+          >
+            <h3 class="tabs-content__title">Греция</h3>
+            <p class="tabs-content__text">
+              На севере Греции находится один из крупнейших комплексов
+              монастырей, расположенных на вершинах скал. Название его «Метеора»
+              буквально переводится как «висящие в воздухе». Этот монастырь
+              основная цель нашего путешествия в Греции. После покарения скал из
+              песчанника и обломочной горной породы, достигающих в высоту 600
+              метров, наградой будет неописуемая красота природы и атмосфера,
+              царящая в монастырях Метеоры.
+            </p>
+            <a href="" class="tabs-content__link button">купить тур сейчас</a>
           </div>
-          <div class="tabs-content">
-            <div class="tabs-content__item">
-              <h3 class="tabs-content__title">Греция</h3>
-              <p class="tabs-content__text">
-                На севере Греции находится один из крупнейших комплексов
-                монастырей, расположенных на вершинах скал. Название его
-                «Метеора» буквально переводится как «висящие в воздухе». Этот
-                монастырь основная цель нашего путешествия в Греции. После
-                покарения скал из песчанника и обломочной горной породы,
-                достигающих в высоту 600 метров, наградой будет неописуемая
-                красота природы и атмосфера, царящая в монастырях Метеоры.
-              </p>
-              <a href="" class="tabs-content__link button">купить тур сейчас</a>
+          <div class="tabs-content__item" id="tab-albania">
+            <h3 class="tabs-content__title">Албания</h3>
+            <p class="tabs-content__text">
+              В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас
+              чистейшей водой и удивительным пляжем. Вначале кажется, что на
+              пляже вас встречает обычный, правда невероятно белоснежный и
+              слишком крупный песок. Однако, присмотревшись, можно понять, что
+              это не песок, а камни, перетёртые до такого мелкого состояния.
+            </p>
+            <a href="" class="tabs-content__link button">купить тур сейчас</a>
+          </div>
+          <div class="tabs-content__item" id="tab-macedonia">
+            <h3 class="tabs-content__title">Македония</h3>
+            <p class="tabs-content__text">
+              В Македонии нашей целью будет посетить Палаошник, который
+              расположился в удивительно красивой лесистой местности возле
+              Охридского озера и Самуиловой твердыни. А также мы заберемся на
+              вершину горы Татичев Камен где находится археологический памятник
+              Кокино в длину около 100 метров.
+            </p>
+            <a href="" class="tabs-content__link button">купить тур сейчас</a>
+          </div>
+          <div class="tabs-content__item" id="tab-montenegro">
+            <h3 class="tabs-content__title">Черногория</h3>
+            <p class="tabs-content__text">
+              Черногория удивит нас самым большим в Европе каньоном реки Тара,
+              который в некоторых местах высотой берегов доходит до 1300 метров,
+              а шириной не превышает трех. При этом длина каньона составляет 80
+              км.
+            </p>
+            <a href="" class="tabs-content__link button">купить тур сейчас</a>
+          </div>
+          <div class="tabs-content__item" id="tab-croatia">
+            <h3 class="tabs-content__title">Хорватия</h3>
+            <p class="tabs-content__text">
+              В Хорватии мы посетим необычайную пещеру названную Бередине. Ее
+              подземный мир увлечет вас на 80-ти метровую глубину через 5
+              освещенных залов, украшенных удивительными нерукотворными
+              скульптурами — сталактитами и сталагмитами — формировавшимися
+              тысячи и тысячи лет.
+            </p>
+            <a href="" class="tabs-content__link button">купить тур сейчас</a>
+          </div>
+        </div>
+        <!-- </div> -->
+        <div class="about__reviews reviews">
+          <h3 class="visually-hidden">Отзывы</h3>
+          <div
+            class="reviews__item reviews__item--active reviews__item--greece"
+          >
+            <div class="reviews__item-wrapper">
+              <p class="reviews__title">Отзывы</p>
+              <blockquote class="reviews__review-wrapper">
+                <p class="reviews__text">
+                  Метеоры в Греции можно сравнить разве что с Монсерратт в
+                  Испании. Такие же высоченные скалы. Но здесь потрясает
+                  масштаб. Огромная территория, высоко в горах. Ощущение такое,
+                  как будто стоишь на краю света!
+                </p>
+                <cite class="reviews__author reviews__author--vlada"
+                  >Влада Голицина</cite
+                >
+              </blockquote>
             </div>
-            <div class="tabs-content__item">
-              <h3 class="tabs-content__title">Албания</h3>
-              <p class="tabs-content__text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Tempora illo ipsa adipisci incidunt nulla, quam sapiente!
-                Impedit perferendis aliquam, qui iure non est, quis hic harum
-                atque in adipisci alias tempore fugit provident sit fuga
-                voluptatum rerum consequatur illo voluptatem.
-              </p>
-              <a href="" class="tabs-content__link button">купить тур сейчас</a>
+          </div>
+          <div class="reviews__item reviews__item--albania">
+            <div class="reviews__item-wrapper">
+              <p class="reviews__title">Отзывы</p>
+              <blockquote class="reviews__review-wrapper">
+                <p class="reviews__text">
+                  Замечательный курорт, обязательно стоит посетить. В следующий
+                  раз возьму с собой сестру, чтобы тоже смогла вкусить все
+                  красоты природы :)
+                </p>
+                <cite class="reviews__author reviews__author--marishka"
+                  >Маришка</cite
+                >
+              </blockquote>
             </div>
-            <div class="tabs-content__item">
-              <h3 class="tabs-content__title">Македония</h3>
-              <p class="tabs-content__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                nulla eveniet laboriosam, repudiandae dolores voluptates,
-                exercitationem quas deserunt nihil hic sed explicabo quasi
-                praesentium a reprehenderit unde! Sed accusamus maxime
-                recusandae pariatur voluptate soluta dignissimos aliquid ducimus
-                commodi, animi asperiores. Voluptatum reiciendis delectus
-                aliquid fugit aliquam vero dolore! A repudiandae qui facilis cum
-                inventore est saepe eaque illum iure atque, nobis minus hic
-                accusantium, pariatur temporibus quae dignissimos repellat modi!
-              </p>
-              <a href="" class="tabs-content__link button">купить тур сейчас</a>
+          </div>
+          <div class="reviews__item reviews__item--macedonia">
+            <div class="reviews__item-wrapper">
+              <p class="reviews__title">Отзывы</p>
+              <blockquote class="reviews__review-wrapper">
+                <p class="reviews__text">
+                  Я бы сказал необычное старое здание. В архитектуре я не
+                  разбираюсь, но подъем в гору был очень веселым так как люди
+                  оказались легкими и заводными. Красота природы впечатлила,
+                  особенно после долгого пути в гору.
+                </p>
+                <cite class="reviews__author reviews__author--mikhail"
+                  >Михаил Кузьмин</cite
+                >
+              </blockquote>
             </div>
-            <div class="tabs-content__item">
-              <h3 class="tabs-content__title">Черногория</h3>
-              <p class="tabs-content__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-                sint culpa quia libero, blanditiis velit ab officiis ad rem
-                quaerat inventore nam! Ea natus quia expedita corrupti animi
-                maiores eos laboriosam odit? Magni, eveniet dolorum. Aliquid
-                labore perspiciatis rem quisquam suscipit blanditiis, illum
-                asperiores veritatis ullam atque error, architecto est.
-              </p>
-              <a href="" class="tabs-content__link button">купить тур сейчас</a>
+          </div>
+          <div class="reviews__item reviews__item--montenegro">
+            <div class="reviews__item-wrapper">
+              <p class="reviews__title">Отзывы</p>
+              <blockquote class="reviews__review-wrapper">
+                <p class="reviews__text">
+                  Неописуемой красоты каньон! Ничего прекраснее в жизни не
+                  видела, разве что в фильмах :) Всем советую
+                </p>
+                <cite class="reviews__author reviews__author--anastacia"
+                  >Анастасия Мей</cite
+                >
+              </blockquote>
             </div>
-            <div class="tabs-content__item">
-              <h3 class="tabs-content__title">Хорватия</h3>
-              <p class="tabs-content__text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
-                excepturi tempora perferendis unde pariatur quos ex blanditiis
-                quam est fugit, officiis reprehenderit, id, libero quisquam. Vel
-                aut at nam voluptatum?
-              </p>
-              <a href="" class="tabs-content__link button">купить тур сейчас</a>
+          </div>
+          <div class="reviews__item reviews__item--croatia">
+            <div class="reviews__item-wrapper">
+              <p class="reviews__title">Отзывы</p>
+              <blockquote class="reviews__review-wrapper">
+                <p class="reviews__text">
+                  Мы поехали всей семьей, я, моя жена и родители. Пещера просто
+                  незабываема! А то, что все это формировалось тысячелетиями,
+                  мега необычно. Первоначально даже не верилось, но натур ни с
+                  чем не спутать по итогу :)
+                  <cite class="reviews__author reviews__author--vladimir"
+                    >Владимир Мулицин</cite
+                  >
+                </p>
+              </blockquote>
             </div>
           </div>
         </div>
-        <div class="reviews">
-          <h3 class="reviews__title">Отзывы</h3>
-          <div class="reviews__item">
-            <blockquote>
-              <p class="reviews__text">
-                Метеоры в Греции можно сравнить разве что с Монсерратт в
-                Испании. Такие же высоченные скалы. Но здесь потрясает масштаб.
-                Огромная территория, высоко в горах. Ощущение такое, как будто
-                стоишь на краю света!
-              </p>
-              <cite class="reviews__author">Влада Голицина</cite>
-            </blockquote>
-          </div>
-        </div>
+        <!-- </div> -->
       </section>
 
       <section class="prices">
-        <h2 class="prices__title">Цены</h2>
+        <h2 class="prices__title" id="prices-title">Цены</h2>
         <p class="prices__lead">
           Специально для Вас мы разработали 2 пакета цен с разными условиями,
           отталкиваясь от Ваших потребностей и возможностей. Выберите для себя
