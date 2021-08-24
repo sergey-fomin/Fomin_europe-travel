@@ -1,11 +1,16 @@
 .button {
+  margin: 0;
+  padding: 0;
   color: $basic_white;
+  font-family: "Montserrat", "Trebuchet MS", sans-serif;
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
   letter-spacing: 2px;
+  border: none;
   text-transform: uppercase;
   background-color: $basic_orange-red;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;

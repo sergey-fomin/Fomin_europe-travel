@@ -5,8 +5,9 @@
   display: flex;
   flex-direction: column;
 
-  &--recommended-theme {
-    border: 3px solid $basic_orange-red;
+  &:hover,
+  &:focus {
+    box-shadow: inset 0 0 0 3px $basic_orange-red;
 
     .price-card__title {
       color: $basic_orange-red;

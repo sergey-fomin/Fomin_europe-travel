@@ -356,9 +356,7 @@
           </div>
         </div>
         <ul class="prices__cards">
-          <li
-            class="prices__card-item price-card price-card--recommended-theme"
-          >
+          <li class="prices__card-item price-card">
             <h4 class="price-card__title">
               Комплексный
               <span class="price-card__title-price">&#36;1999</span>
@@ -408,22 +406,24 @@
       </section>
 
       <section class="form-section">
-        <form action="#" class="form">
+        <h2 class="visually-hidden">Форма обратой связи</h2>
+        <form action="#" class="form-section__form form">
           <fieldset class="form__contacts form-contacts">
-            <legend class="form-contacts__title">
-              У Вас остались вопросы?
-            </legend>
+            <p class="form-contacts__title">У Вас остались вопросы?</p>
             <p class="form-contacts__lead">
               Оставьте свой номер или e-mail и мы свяжемся с Вами
             </p>
-            <input type="text" class="form-contacts__input" /><label
-              for=""
-              class="form-contacts__input-label"
-            ></label
-            ><input type="text" class="form-contacts__input" /><label
-              for=""
-              class="form-contacts__input-label"
-            ></label>
+            <input
+              type="tel"
+              class="form-contacts__input form-contacts__input--phone"
+              placeholder="Введите 10 цифр номера"
+              required
+            />
+            <input
+              type="email"
+              class="form-contacts__input"
+              placeholder="E-mail"
+            />
           </fieldset>
           <button class="form-section__button button" type="submit">
             отправить
