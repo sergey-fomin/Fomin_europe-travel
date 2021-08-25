@@ -2,27 +2,39 @@
   max-width: 1234px;
   margin: 0 auto;
   padding: 0 32px 74px;
-  display: flex;
-  justify-content: space-between;
-}
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
 
-.footer__next-travel,
-.footer__socials,
-.footer__corporate-travel {
-  max-width: 387px;
+  &::before,
+  &::after {
+    content: "";
+    width: 1px;
+    height: calc(100% - 6px);
+    background-color: $special_light_grey;
+    position: absolute;
+    top: 0;
+  }
+
+  &::before {
+    left: calc(100% / 3);
+  }
+
+  &::after {
+    left: calc(100% * 2 / 3);
+  }
 }
 
 .footer__next-travel {
-  margin-right: auto;
-  margin-left: 0;
-  padding-right: 10px;
+  justify-self: start;
 }
 
 .footer__socials {
-  margin: 0 auto;
   padding: 0 10px;
+  justify-self: center;
 }
 
 .footer__corporate-travel {
-  padding-left: 10px;
+  max-width: 320px;
+  justify-self: flex-end;
 }

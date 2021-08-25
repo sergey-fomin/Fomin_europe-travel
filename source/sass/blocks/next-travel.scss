@@ -11,9 +11,10 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  column-count: 3;
-  column-gap: 50px;
   white-space: nowrap;
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  grid-column-gap: 50px;
 }
 
 .next-travel__item {
