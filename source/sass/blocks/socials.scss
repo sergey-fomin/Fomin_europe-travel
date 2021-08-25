@@ -1,6 +1,14 @@
+.socials__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: $basic_black;
+}
+
 .socials__link {
   color: $basic_black;
-  display: flex;
   display: flex;
   align-items: center;
 
@@ -8,8 +16,43 @@
   &:focus {
     color: $basic_orange-red;
 
-    & .socials__icon path {
+    & .socials__icon--phone path {
       stroke: $basic_orange-red;
+    }
+
+    & .socials__icon--email path {
+      fill: $basic_orange-red;
+    }
+  }
+
+  &--footer {
+    margin-bottom: 23px;
+    position: relative;
+
+    & .socials__link-title {
+      font-size: 14px;
+      line-height: 17px;
+      color: $basic_orange-red;
+    }
+
+    & .socials__link-title {
+      margin-left: 41px;
+    }
+
+    & .socials__icon {
+      position: absolute;
+      left: 0;
+
+      &--email {
+      }
+    }
+
+    & .socials__icon--email path {
+      fill: $special_light_grey;
+    }
+
+    & .socials__icon--phone path {
+      stroke: $special_light_grey;
     }
   }
 }

@@ -1,0 +1,28 @@
+.next-travel__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: $basic_black;
+}
+
+.next-travel__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  column-count: 3;
+  column-gap: 50px;
+  white-space: nowrap;
+}
+
+.next-travel__item {
+  margin-bottom: 10px;
+}
+
+.next-travel__link {
+  font-size: 14px;
+  line-height: 17px;
+  color: $basic_dark;
+  opacity: 0.5;
+}
