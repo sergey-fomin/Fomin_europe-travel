@@ -52,7 +52,7 @@
               <a href="#catalog-title" class="cite-nav__link">О путешествии</a>
             </li>
             <li class="cite-nav__item">
-              <a href="#prices-title" class="cite-nav__link">Цены</a>
+              <a href="#prices" class="cite-nav__link">Цены</a>
             </li>
           </ul>
         </nav>
@@ -87,7 +87,9 @@
             В этом туре вы откроете для себя Европу в новом свете. Вас ждет:
             море, горы, а также потрясающая красота природы.
           </p>
-          <a href="" class="promo__link button button--arrow">смотреть тур</a>
+          <a href="#about" class="promo__link button button--arrow"
+            >смотреть тур</a
+          >
         </div>
       </section>
 
@@ -101,9 +103,10 @@
           <ul class="catalog__list">
             <li class="catalog__row">
               <div class="catalog__item catalog-card">
-                <a href="" class="catalog-card__link">
+                <a href="#about" class="catalog-card__link">
                   <img
                     src="img/card-greece-desktop.jpg"
+                    srcset="img/card-greece-desktop@2x.jpg 2x"
                     alt="Виды Греции"
                     class="catalog-card__image"
                     width="350"
@@ -116,9 +119,10 @@
                 </a>
               </div>
               <div class="catalog__item catalog-card">
-                <a href="" class="catalog-card__link">
+                <a href="#about" class="catalog-card__link">
                   <img
                     src="img/card-albania-desktop.jpg"
+                    srcset="img/card-albania-desktop@2x.jpg 2x"
                     alt="Виды Албании"
                     class="catalog-card__image"
                     width="350"
@@ -131,9 +135,10 @@
                 </a>
               </div>
               <div class="catalog__item catalog-card">
-                <a href="" class="catalog-card__link">
+                <a href="#about" class="catalog-card__link">
                   <img
                     src="img/card-macedonia-desktop.jpg"
+                    srcset="img/card-macedonia-desktop@2x.jpg 2x"
                     alt="Виды Македонии"
                     class="catalog-card__image"
                     width="350"
@@ -148,9 +153,10 @@
             </li>
             <li class="catalog__row">
               <div class="catalog__item catalog-card">
-                <a href="" class="catalog-card__link">
+                <a href="#about" class="catalog-card__link">
                   <img
                     src="img/card-montenegro-desktop.jpg"
+                    srcset="img/card-montenegro-desktop@2x.jpg 2x"
                     alt="Виды Черногории"
                     class="catalog-card__image"
                     width="350"
@@ -163,9 +169,10 @@
                 </a>
               </div>
               <div class="catalog__item catalog-card">
-                <a href="" class="catalog-card__link">
+                <a href="#about" class="catalog-card__link">
                   <img
                     src="img/card-croatia-desktop.jpg"
+                    srcset="img/card-croatia-desktop@2x.jpg 2x"
                     alt="Виды Хорватии"
                     class="catalog-card__image"
                     width="350"
@@ -182,7 +189,7 @@
         </div>
       </section>
 
-      <section class="about">
+      <section class="about" id="about">
         <h2 class="visually-hidden">Подробная информация и отзывы</h2>
         <div class="about__tab-triggers tabs__triggers tabs-triggers">
           <a
@@ -347,9 +354,9 @@
         </div>
       </section>
 
-      <section class="prices">
+      <section class="prices" id="prices">
         <div class="prices__info">
-          <h2 class="prices__title" id="prices-title">Цены</h2>
+          <h2 class="prices__title">Цены</h2>
           <p class="prices__lead">
             Специально для Вас мы разработали 2 пакета цен с разными условиями,
             отталкиваясь от Ваших потребностей и возможностей. Выберите для себя

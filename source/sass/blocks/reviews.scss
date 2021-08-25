@@ -29,6 +29,28 @@
   &--croatia {
     background-image: url("../img/reviews-bg-croatia-desktop.jpg");
   }
+
+  @media (min-resolution: 2dppx) {
+    &--greece {
+      background-image: url("../img/reviews-bg-greece-desktop@2x.jpg");
+    }
+
+    &--albania {
+      background-image: url("../img/reviews-bg-albania-desktop@2x.jpg");
+    }
+
+    &--macedonia {
+      background-image: url("../img/reviews-bg-macedonia-desktop@2x.jpg");
+    }
+
+    &--montenegro {
+      background-image: url("../img/reviews-bg-montenegro-desktop@2x.jpg");
+    }
+
+    &--croatia {
+      background-image: url("../img/reviews-bg-croatia-desktop@2x.jpg");
+    }
+  }
 }
 
 .reviews__item-wrapper {
@@ -88,6 +110,7 @@
     margin-right: 16px;
     border-radius: 50%;
     background-repeat: no-repeat;
+    background-size: contain;
   }
 
   &--vlada::before {
@@ -108,5 +131,27 @@
 
   &--vladimir::before {
     background-image: url("../img/reviews-author-vladimir.jpg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    &--vlada::before {
+      background-image: url("../img/reviews-author-vlada@2x.jpg");
+    }
+
+    &--marishka::before {
+      background-image: url("../img/reviews-author-marishka@2x.jpg");
+    }
+
+    &--mikhail::before {
+      background-image: url("../img/reviews-author-mikhail@2x.jpg");
+    }
+
+    &--anastacia::before {
+      background-image: url("../img/reviews-author-anastacia@2x.jpg");
+    }
+
+    &--vladimir::before {
+      background-image: url("../img/reviews-author-vladimir@2x.jpg");
+    }
   }
 }

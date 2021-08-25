@@ -3,18 +3,22 @@
   max-width: 1234px;
   margin: 0 auto;
   margin-bottom: 160px;
-  padding: 0 32px 0;
+  padding-right: 32px;
   background-image: url("../img/form-bg-besktop.jpg");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: 32px 0;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/form-bg-besktop@2x.jpg");
+  }
 }
 
 .form-section__form {
   max-width: 656px;
+  margin-right: 0;
+  margin-left: auto;
 }
 
 .form-section__button {

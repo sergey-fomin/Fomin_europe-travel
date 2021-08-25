@@ -4,6 +4,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo-bg-desktop@2x.jpg");
+  }
 }
 
 .promo__wrapper {
