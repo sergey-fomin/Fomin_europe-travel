@@ -56,3 +56,74 @@
     margin-left: 30px;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .prices {
+    padding: 0 0 110px;
+    flex-direction: column;
+  }
+
+  .prices__info {
+    max-width: 100%;
+    padding: 0 21px;
+    margin: 0 auto 40px;
+    text-align: center;
+    order: 1;
+  }
+
+  .prices__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 45px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .prices__lead {
+    margin-bottom: 30px;
+  }
+
+  .prices__cards {
+    justify-content: space-evenly;
+    order: 2;
+  }
+
+  .prices__card-item {
+    max-width: 288px;
+    min-height: 629px;
+
+    &:not(:first-child) {
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .prices {
+    padding: 0 16px 50px;
+  }
+
+  .prices__info {
+    padding: 0;
+  }
+
+  .prices__title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .prices__lead {
+    margin-bottom: 20px;
+  }
+
+  .prices__cards {
+    flex-direction: column;
+  }
+
+  .prices__card-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}

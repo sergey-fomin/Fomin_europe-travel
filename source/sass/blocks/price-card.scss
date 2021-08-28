@@ -11,6 +11,13 @@
 
     .price-card__title {
       color: $basic_orange-red;
+      letter-spacing: normal;
+    }
+
+    .price-card__lead {
+      &::after {
+        background-color: $basic_orange-red;
+      }
     }
 
     .price-card__option-item::before {
@@ -38,6 +45,7 @@
   font-weight: 700;
   font-size: 25px;
   line-height: 34px;
+  letter-spacing: normal;
   text-align: right;
 }
 
@@ -89,4 +97,39 @@
 .price-card__link {
   min-height: 75px;
   margin-top: auto;
+}
+
+@media (max-width: $tablet-width) {
+  .price-card {
+    padding: 0;
+    text-align: center;
+  }
+
+  .price-card__title {
+    margin: 30px 20px 11px;
+    font-size: 24px;
+    flex-direction: column;
+  }
+
+  .price-card__title-price {
+    margin: 10px 20px 0;
+    text-align: center;
+  }
+
+  .price-card__lead {
+    margin: 0 20px 31px;
+
+    &::after {
+      bottom: -10px;
+    }
+  }
+
+  .price-card__options {
+    margin: 0 20px 30px;
+    text-align: left;
+  }
+
+  .price-card__link {
+    min-height: 50px;
+  }
 }

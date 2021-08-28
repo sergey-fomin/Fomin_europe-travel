@@ -34,3 +34,26 @@
     }
   }
 }
+
+@media (max-width: $tablet-width) {
+  .contacts {
+    margin: 0;
+  }
+
+  .contacts__lead {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .contacts__link {
+    font-size: 18px;
+    color: $basic_orange-red;
+    text-decoration: underline;
+
+    &--phone {
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
