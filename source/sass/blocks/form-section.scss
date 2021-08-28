@@ -26,3 +26,39 @@
   height: 50px;
   margin: 0 auto;
 }
+
+@media (max-width: $tablet-width) {
+  .form-section {
+    max-width: 100%;
+    padding: 0;
+    background-image: url("../img/form-bg-tablet.jpg");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/form-bg-tablet@2x.jpg");
+    }
+  }
+
+  .form-section__form {
+    margin: 0 auto 4px;
+  }
+
+  .form-section__button {
+    width: 250px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .form-section {
+    background-image: none;
+  }
+
+  .form-section__form {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .form-section__button {
+    width: 288px;
+  }
+}

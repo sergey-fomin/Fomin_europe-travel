@@ -10,3 +10,18 @@
   margin-bottom: 25px;
   padding: 0;
 }
+
+@media (max-width: $tablet-width) {
+  .form__contacts {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .form {
+    padding: 50px 16px;
+    background-color: $special_light_grey-3;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
