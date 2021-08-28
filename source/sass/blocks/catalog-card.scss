@@ -1,9 +1,9 @@
 .catalog-card {
+  height: 100%;
+  display: block;
   position: relative;
   overflow: hidden;
-}
 
-.catalog-card__link {
   &:hover,
   &:focus {
     &::after {
