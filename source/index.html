@@ -43,8 +43,8 @@
             />
           </svg>
         </a>
-        <nav class="header__cite-nav cite-nav">
-          <button class="cite-nav__toggle">
+        <nav class="header__cite-nav cite-nav cite-nav--no-js">
+          <button class="cite-nav__toggle nav-toggle">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="cite-nav__list">
@@ -107,14 +107,30 @@
                   href="#about"
                   class="catalog-card__link catalog-card__link--greece"
                 >
-                  <img
-                    src="img/card-greece-desktop.jpg"
-                    srcset="img/card-greece-desktop@2x.jpg 2x"
-                    alt="Виды Греции"
-                    class="catalog-card__image"
-                    width="350"
-                    height="430"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        img/card-greece-mobile.jpg    1x,
+                        img/card-greece-mobile@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 1024px)"
+                      srcset="
+                        img/card-greece-tablet.jpg    1x,
+                        img/card-greece-tablet@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="img/card-greece-desktop.jpg"
+                      srcset="img/card-greece-desktop@2x.jpg 2x"
+                      alt="Виды Греции"
+                      class="catalog-card__image"
+                      width="350"
+                      height="430"
+                    />
+                  </picture>
                   <p class="catalog-card__title">Греция</p>
                   <p class="catalog-card__button button button--transparent">
                     смотреть подробнее

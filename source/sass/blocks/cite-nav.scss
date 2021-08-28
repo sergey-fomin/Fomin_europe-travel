@@ -31,3 +31,22 @@
     color: $basic_orange-red;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .cite-nav--no-js {
+  }
+  .cite-nav__toggle {
+    width: 72px;
+    height: 100%;
+    display: block;
+  }
+  .cite-nav__list {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .cite-nav__toggle {
+    width: 50px;
+  }
+}

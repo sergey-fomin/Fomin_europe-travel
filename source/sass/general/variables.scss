@@ -11,10 +11,11 @@ $special_dark: rgba($basic_dark, 0.7);
 $special_dark-2: rgba($basic_dark, 0.3);
 $special_grey: rgba(#293642, 0.1);
 $special_light_grey: #d7d9df;
+$special_light_grey-2: #dadada;
 $special_white: rgba($basic_white, 0.7);
 
 // Viewports
 
-$desktop-width-only: 1024px;
-$tablet-width: 1023px;
-$mobile-width: 767px;
+$desktop-width-only: 1025px;
+$tablet-width: 1024px;
+$mobile-width: 768px;

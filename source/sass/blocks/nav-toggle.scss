@@ -1,0 +1,18 @@
+.nav-toggle {
+  border: none;
+  background-color: $basic_orange-red;
+  cursor: pointer;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 22.5px;
+    height: 1px;
+    background-color: $special_light_grey-2;
+    box-shadow: 0 5.25px $special_light_grey-2, 0 -5.25px $special_light_grey-2;
+    position: absolute;
+    transform: translate(-50%, 50%);
+    top: calc(50% - 2px);
+    left: 50%;
+  }
+}

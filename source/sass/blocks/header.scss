@@ -1,12 +1,14 @@
 .header {
   min-height: 100px;
   padding: 36px 30px 32px;
+  overflow: hidden;
 }
 
 .header__wrapper {
   max-width: 1170px;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .header__logo {
@@ -22,4 +24,42 @@
 .header__socials {
   margin-right: 0;
   min-width: max-content;
+}
+
+@media (max-width: $tablet-width) {
+  .header {
+    min-height: 50px;
+    padding: 0;
+    padding-left: 21px;
+  }
+
+  .header__wrapper {
+    min-height: 50px;
+    margin: 0;
+  }
+
+  .header__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__logo-image {
+    width: 44px;
+    height: 16px;
+  }
+
+  .header__cite-nav {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .header__socials {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .header {
+    padding-left: 16px;
+  }
 }

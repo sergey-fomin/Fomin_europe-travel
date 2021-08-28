@@ -42,3 +42,17 @@
     border: 1px solid $special_white;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .button {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+
+    &--arrow {
+      &::after {
+        background-image: url("../img/icon-arrow-thin.svg");
+      }
+    }
+  }
+}
