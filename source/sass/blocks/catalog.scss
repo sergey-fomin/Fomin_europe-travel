@@ -72,6 +72,7 @@
     font-size: 30px;
     line-height: 45px;
     letter-spacing: normal;
+    text-align: center;
 
     &::after {
       display: none;
@@ -81,6 +82,7 @@
   .catalog__lead {
     width: 345px;
     margin-bottom: 40px;
+    text-align: center;
   }
 
   .catalog__list {
@@ -112,6 +114,10 @@
   .catalog__lead {
     width: 288px;
     margin-bottom: 20px;
+  }
+
+  .catalog__list {
+    flex-direction: column;
   }
 
   .catalog__item {

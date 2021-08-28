@@ -155,3 +155,30 @@
     }
   }
 }
+
+@media (max-width: $tablet-width) {
+  .reviews__item {
+    min-height: 415px;
+    background-size: 100% 415px;
+    justify-content: center;
+    align-items: flex-start;
+
+    &--greece {
+      background-image: url("../img/reviews-bg-greece-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/reviews-bg-greece-tablet@2x.jpg");
+      }
+    }
+
+    .reviews__item-wrapper {
+      margin-top: 80px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .reviews__item-wrapper {
+    margin: 50px 26px auto;
+  }
+}

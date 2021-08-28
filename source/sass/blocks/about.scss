@@ -32,3 +32,44 @@
   left: 50%;
   z-index: -10;
 }
+
+@media (max-width: $tablet-width) {
+  .about {
+    width: 100%;
+    margin: 0;
+    padding: 0 0 80px 0;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "link"
+      "content"
+      "review";
+    overflow: hidden;
+  }
+
+  .about__tab-triggers {
+    margin-bottom: 45px;
+    margin-left: 21px;
+    grid-area: link;
+  }
+
+  .about__tab-content {
+    max-width: 100vw;
+    grid-area: content;
+  }
+
+  .about__reviews {
+    max-width: 100vw;
+    grid-area: review;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .about {
+    padding: 0 0 45px 0;
+  }
+
+  .about__tab-triggers {
+    margin-bottom: 30px;
+    margin-left: 16px;
+  }
+}
