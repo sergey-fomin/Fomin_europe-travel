@@ -1,40 +1,112 @@
 .footer {
   max-width: 1234px;
   margin: 0 auto;
-  padding: 0 32px 74px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  padding: 0 10px 74px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__next-travel {
+  flex: 0 1 387px;
+  padding-right: 15px;
+}
+
+.footer__socials {
+  flex: 0 1 397px;
+  padding: 0 65px;
+  justify-self: center;
   position: relative;
 
   &::before,
   &::after {
     content: "";
     width: 1px;
-    height: calc(100% - 6px);
+    height: 189px;
     background-color: $special_light_grey;
     position: absolute;
     top: 0;
   }
 
   &::before {
-    left: calc(100% / 3);
+    left: 0;
   }
 
   &::after {
-    left: calc(100% * 2 / 3);
+    right: 0;
   }
 }
 
-.footer__next-travel {
-  justify-self: start;
-}
-
-.footer__socials {
-  padding: 0 10px;
-  justify-self: center;
-}
-
 .footer__corporate-travel {
-  max-width: 320px;
-  justify-self: flex-end;
+  flex: 0 1 375px;
+  padding-left: 65px;
+}
+
+@media (max-width: $tablet-width) {
+  .footer {
+    padding: 0 21px 54px;
+    flex-wrap: wrap;
+  }
+
+  .footer__next-travel {
+    flex: 0 1 395px;
+    margin-bottom: 30px;
+  }
+
+  .footer__socials {
+    flex: 0 1 331px;
+    padding: 0 0 0 50px;
+
+    &::before {
+      height: 177px;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .footer__corporate-travel {
+    flex: 1 1 100%;
+    padding: 30px 0 0;
+    text-align: center;
+    position: relative;
+
+    &::before {
+      content: "";
+      height: 1px;
+      width: 100%;
+      background-color: $special_light_grey;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer__next-travel,
+  .footer__socials,
+  .footer__corporate-travel {
+    text-align: center;
+    flex: 0 1 100%;
+  }
+
+  .footer__next-travel {
+    padding: 0;
+  }
+
+  .footer__socials {
+    padding: 30px 0;
+
+    &::before {
+      height: 1px;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
 }

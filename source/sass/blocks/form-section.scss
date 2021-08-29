@@ -30,6 +30,7 @@
 @media (max-width: $tablet-width) {
   .form-section {
     max-width: 100%;
+    margin-bottom: 80px;
     padding: 0;
     background-image: url("../img/form-bg-tablet.jpg");
     background-size: cover;
@@ -51,6 +52,7 @@
 @media (max-width: $mobile-width) {
   .form-section {
     background-image: none;
+    margin-bottom: 60px;
   }
 
   .form-section__form {

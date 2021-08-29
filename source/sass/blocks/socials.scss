@@ -67,3 +67,26 @@
   line-height: 32px;
   text-decoration-line: underline;
 }
+
+@media (max-width: $mobile-width) {
+  .socials__link--footer {
+    justify-content: center;
+
+    .socials__link-title {
+      margin: 0;
+    }
+
+    .socials__icon {
+      position: relative;
+
+      &--email {
+        margin-right: 15px;
+        margin-left: 10px;
+      }
+
+      &--phone {
+        margin-right: 11px;
+      }
+    }
+  }
+}
